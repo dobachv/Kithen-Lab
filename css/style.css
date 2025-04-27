@@ -1,0 +1,315 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+      box-sizing: inherit;
+  }
+  
+  a {
+    text-decoration: none;
+   color: inherit;
+  }
+  
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  :root{
+    --color-black:#222;
+    --color-white: #FFFFFF;
+  }
+  
+
+  @font-face {
+	font-family: 'Prata';
+	src: url('../fonts/Prata-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  color:var(--color-white);
+  background-color: #282829;
+
+}
+
+.container{
+  margin: 0 auto;
+  max-width: 1920px;
+}
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+.nav{
+  text-transform: uppercase;
+  font-style: italic;
+  overflow-x: auto;
+}
+
+.nav__list{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.logo{
+  font-family: "Prata";
+  font-size: 36px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.hero{
+  background-color: var(--color-black);
+}
+
+.header{
+  position: fixed;
+  background-color: #222;
+  width: 100vw;
+  z-index: 1;
+}
+
+
+
+.header__container{
+  max-width: 1900px;
+  margin: 0 auto;
+  display: flex;
+  padding: 50px 229px 50px 168px;
+  width: 65%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero__container{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.hero__left{
+  max-width: 800px;
+  padding:  351px 0 50px 168px;
+  
+}
+
+.hero__title{
+  font-family: "Prata";
+  font-size: 80px;
+  margin-bottom: 50px;
+}
+
+.hero__descr{
+  font-size: 50px;
+  margin-bottom: 64px;
+}
+
+.hero__img{
+  display: flex;
+  align-items: center;
+}
+
+.hero__list{
+  margin-bottom:40px ;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.hero__item{
+  display: flex;
+  align-items: center;
+  gap: 17px
+}
+
+.hero__number{
+  font-family: "Prata";
+  font-size: 80px;
+}
+
+.hero__text{
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  gap:10px
+}
+
+.btn{
+  padding: 40px 50px;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  font-size: 24px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.advante__container{
+  padding: 100px 0;
+  background-color: #282829;
+  display: grid;
+  grid-template-columns: 30% calc(100% - 60% - 106px) 30%;
+  grid-template-rows: max(650px);
+  gap: 53px;
+}
+
+.advante__list{
+  overflow-y: auto;
+}
+
+
+
+.advante__line{
+  margin: 40px 0;
+}
+
+.advante__item-block{
+  display: flex;
+  align-items: center;
+  gap:20px;
+}
+
+.advante__center{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.advante__btn{
+  width: 100%;
+}
+
+.advante__text{
+  font-size: 24px;
+}
+  
+
+.advante__img img {
+  max-height: 724px;
+}
+
+.feedback__container{
+  padding: 0 162px 100px 162px;
+  border-radius: 30px;
+}
+
+.feedback__black{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--color-white);
+  border-radius: 30px;
+}
+
+.feedback__left{
+  padding:  71px 123px;
+  color: var(--color-black);
+  max-height: 1000px;
+  overflow-y: auto;
+}
+
+.feedback__img{
+  display: flex;
+  position: relative;
+}
+
+.feedback__img-realtor{
+  position: absolute;
+  height: 100%;
+  width: 80%;
+  left: -83px;
+}
+
+
+.feedback__title{
+  margin-bottom: 45px;
+  font-family: "Prata";
+  font-size: 54px;
+}
+
+.feedback__form{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.error{
+  display: none;
+}
+
+.feedback__input{
+  font-size: 24px;
+  padding: 14px 40px;
+  border: #D6D6D6 solid 2px;
+  width: 100%;
+
+}
+
+.feedback__input:first-child{
+  margin-bottom:13px;
+}
+.feedback__checkbox {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.checkbox__text{
+  font-size: 19px;
+  cursor: pointer;
+}
+.checkbox__input{
+  width: 24px;
+  height: 24px;
+}
+
+.feedback__btn{
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding: 32px 30px;
+}
+
+.footer{
+  background-color: #222;
+}
+
+.footer__nav{
+  display: flex;
+  justify-content: center;
+  border-top: #D5C9BE solid 2px;
+  border-bottom: #D5C9BE solid 2px;
+  padding: 40px ;
+}
+
+.footer__center{
+  padding: 60px 160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.svg__list{
+  display: flex;
+  gap:40px;
+}
+
+.footer__bootom{
+  padding: 0 160px 60px 160px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__line{
+  width: 100vw;
+}
